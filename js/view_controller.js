@@ -9,6 +9,22 @@
     Bild austauschen :: 
 */
 
+//  von unten nach oben beginnen!**
+// Bild austauschen************
+
+// output(updateImg("cola")) //Test
+// output(updateImg("wein")) //Test
+// output(updateImg("milch")) //Test
+// output(updateImg("saft")) //Test
+// output(updateImg("tee")) //Test
+
+function updateImg(imgName) {
+    const img = document.getElementById("bevImg");
+    img.src = "./bilder/" + imgName + ".jpg"
+
+    return imgName          // Monitoring
+}
+
 
 
 //Modul: Konsolenausgabe --> Test:
