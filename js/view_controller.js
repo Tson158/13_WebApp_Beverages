@@ -29,38 +29,38 @@ function updateImg(imgName) {
 // Business-Logic (Alter ---> Getränk)************
 //Modul: Business-Logik (Mapping)
 
-output(checkAge(2))
+// output(checkAge(2))
+// output(checkAge(7))
+// output(checkAge(13))
+// output(checkAge(47))
+// output(checkAge(15))
+// output(checkAge(131))
 
 function checkAge(age) {
 
-    // switch (true) {
-    //     case (age >= 0) && (age <= 5) :
-    //         console.log(firstName + " trinkt Milch");
-    //         break;
-    //     case (age >= 6) && (age <= 12):
-    //         console.log(firstName + " trinkt Saft");
-    //         break;
-    //     case (age >= 13) && (age <= 17):
-    //         console.log(firstName + " trinkt Cola");
-    //         break;
-    //     case (age >= 18) && (age <= 130):
-    //         console.log(firstName + " trinkt Wein");    
-    //         break;     
-    //     default:    
-    //         console.log("Bitte Tee trinken!");      
-    //         break;    
-    // }
-
-
-
-
-
-
-
+    switch (true) {
+        case (age >= 0) && (age <= 5) :
+            return "milch"         
+        case (age >= 6) && (age <= 12):
+            return "saft"
+        case (age >= 13) && (age <= 17):
+            return "cola"
+        case (age >= 18) && (age <= 130):
+            return "wein"   
+        default:    
+            return "tee"    
+    }
     return "cola";
 }
 
+//  Modul Ablaufsteuerung 
+// Controller
 
+controller();
+
+function controller() {
+    output(updateImg(checkAge(2)));
+}
 
 
 
